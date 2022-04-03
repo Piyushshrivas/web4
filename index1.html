@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box and shadow property</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            padding: 23px 12px;
+            margin: 23px 12px;
+            /* border: 2px solid black ; */
+            background-color: palevioletred;
+            box-shadow: 10px 13px green;
+            
+            /* box-shadow: -10px -13px 11px 30px rgb(0, 128, 124, 0.5); */
+            box-shadow: 3px 6px yellow, 4px 7px red;
+            /* box-shadow: inset 13px 15px gold; */
+            
+        }
+        .card h2{
+            text-shadow: 3px 5px pink;
+            text-shadow: 3px 5px 3px pink;
+        }
+        #box{
+            display: flex;
+            height: 200px;
+            width: 200px;
+            background-color: aquamarine;
+            justify-content: center;
+            align-items: center;
+            transition-property: background-color;
+            transition-duration: 4s;
+            /* transition-timing-function: ease-in; */
+            /* transition-timing-function: ease-out; */
+            transition-timing-function: ease-in-out;
+            transition-delay: 1s;
+        }
+        #box:hover{
+            background-color: rgb(42, 159, 165);
+            height: 300px;
+            width: 300px;
+            border-radius: 50px;
+            font-size: 100px;
+        }
+        
+        .yoy{
+            background: rgb(140, 52, 52);
+            border: 3px solid black;
+            border-radius: 6px;
+            height: 300px;
+            width: 300px;
+           align-items: center;
+           display: flex;
+           justify-content: center;
+           color: white;
+            
+        }
+        .me{
+            display: flex;
+            background-color: rgb(30, 154, 142);
+            align-items: center;
+            justify-content: center;
+            transition: all 3s ease-in-out;
+            margin: 100px;
+            padding: 10px;
+            height: 80vh;
+        }
+        .yoy:hover{
+            /* transform: rotate(45deg); */
+            /* transform: skew(40deg); */
+            /* transform: scale(2); */
+            /* transform: translateX(120px); */
+            /* transform: translateY(120px); */
+            transform: translate(50px,50px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card1"><h2>HTML Course</h2><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem rem eligendi ipsa tenetur error doloribus ut laboriosam perspiciatis esse cumque. Mollitia ipsa, ducimus consequatur maxime dolorum quos facere commodi iure!</p></div>
+        <div class="card" id="card2"><h2>Java Course</h2><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis similique at ad impedit, perferendis in iste odio minima. Et cum placeat ipsam accusamus iure sunt. Consectetur culpa est itaque excepturi!</p></div>
+        <div class="card" id="card3"><h2>C++ Course</h2><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis similique at ad impedit, perferendis in iste odio minima. Et cum placeat ipsam accusamus iure sunt. Consectetur culpa est itaque excepturi!</p></div>
+       
+    </div>
+    <h3>CSS Transition learning</h3>
+    <div class="bag" id="box">This is my box</div>
+    <div class="me">
+        <div class="yoy">This is yoY</div>
+    </div>
+</body>
+</html>
